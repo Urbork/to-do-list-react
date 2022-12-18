@@ -1,0 +1,45 @@
+.form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.form__heading {
+  padding: 0 0 16px 16px;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.form__interface {
+  margin: 0 16px 16px 16px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 16px;
+}
+
+@media (max-width: 767px) {
+  .form__interface {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form__input {
+  padding: 8px 12px;
+  border: 2px solid whitesmoke;
+}
+
+.form__button {
+  padding: 8px 16px;
+  background-color: teal;
+  color: white;
+  border: none;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  transform: scale(1.05);
+  background-color: hsl(180, 100%, 30%);
+}
