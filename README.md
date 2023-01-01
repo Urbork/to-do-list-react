@@ -1,8 +1,12 @@
+# To-Do List
+
+It is a very simple to-do list. It's a list of tasks you need to complete or things that you want to do.
+
+![preview](https://i.postimg.cc/Hn2sLbSc/preview.jpg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-![preview](https://i.postimg.cc/Hn2sLbSc/preview.jpg)
 
 ## Available Scripts
 
