@@ -9,8 +9,8 @@ import Section from "./Section";
 function App() {
   const [hideDone, setHideDone] = useState(false);
   const [tasks, setTasks] = useState([
-    { id: 1, content: "przejść na Reacta", done: false },
-    { id: 2, content: "zjeść śniadanie", done: true },
+    { id: 2, content: "przejść na Reacta", done: false },
+    { id: 1, content: "zjeść śniadanie", done: true },
   ]);
 
   const toggleHideDone = () => {
@@ -39,12 +39,12 @@ function App() {
 
   const addNewTask = (content) => {
     setTasks((tasks) => [
-      ...tasks,
       {
         content,
         done: false,
-        id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
+        id: tasks.length === 0 ? 1 : tasks[0].id + 1,
       },
+      ...tasks,
     ]);
   };
 
