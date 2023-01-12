@@ -19,7 +19,7 @@ const List = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
         ${task.done ? " tasks__listItemText--done" : ""}
         `}
         >
-          {task.id} - {task.content}
+          {task.content}
         </span>
         <button
           onClick={() => removeTask(task.id)}
