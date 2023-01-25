@@ -6,12 +6,20 @@ import List from "./List";
 import Buttons from "./Buttons";
 import Section from "./Section";
 
+const PREVIOUS_TASKS = JSON.parse(localStorage.getItem("tasks"));
+
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([
-    { id: 2, content: "przejść na Reacta", done: false },
-    { id: 1, content: "zjeść śniadanie", done: true },
-  ]);
+  const [tasks, setTasks] = useState(
+    PREVIOUS_TASKS
+      ? PREVIOUS_TASKS
+      : [
+          { id: 2, content: "przejść na Reacta", done: false },
+          { id: 1, content: "zjeść śniadanie", done: true },
+        ]
+  );
+
+  JSON.parse(localStorage.getItem("tasks"));
 
   const toggleHideDone = () => {
     setHideDone((hideDone) => !hideDone);
@@ -43,6 +51,8 @@ function App() {
       ...tasks,
     ]);
   };
+
+  localStorage.setItem("tasks", JSON.stringify(tasks));
 
   return (
     <Container>
