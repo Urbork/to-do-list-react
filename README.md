@@ -2,7 +2,7 @@
 
 It is a very simple to-do list. It's a list of tasks you need to complete or things that you want to do.
 
-urbork.github.io/to-do-list-react/
+https://urbork.github.io/to-do-list-react/
 
 ![preview](https://i.postimg.cc/Hn2sLbSc/preview.jpg)
 
