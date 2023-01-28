@@ -13,13 +13,10 @@ function App() {
   const [tasks, setTasks] = useState(
     PREVIOUS_TASKS
       ? PREVIOUS_TASKS
-      : [
-          { id: 2, content: "przejść na Reacta", done: false },
-          { id: 1, content: "zjeść śniadanie", done: true },
-        ]
+      : [{ id: 1, content: "przykładowe zadanie", done: true }]
   );
 
-  JSON.parse(localStorage.getItem("tasks"));
+  localStorage.setItem("tasks", JSON.stringify(tasks));
 
   const toggleHideDone = () => {
     setHideDone((hideDone) => !hideDone);
@@ -51,8 +48,6 @@ function App() {
       ...tasks,
     ]);
   };
-
-  localStorage.setItem("tasks", JSON.stringify(tasks));
 
   return (
     <Container>
