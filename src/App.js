@@ -82,3 +82,5 @@ function App() {
 }
 
 export default App;
+
+// komentarz na próbę
