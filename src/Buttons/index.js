@@ -1,4 +1,4 @@
-import "./style.css";
+import { Wrapper, Button } from "./styled.js";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => {
   if (tasks.length === 0) {
@@ -6,18 +6,17 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => {
   }
 
   return (
-    <div className="buttons">
-      <button onClick={toggleHideDone} className="buttons__button">
+    <Wrapper>
+      <Button onClick={toggleHideDone}>
         {hideDone ? "Pokaż" : "Ukryj"} ukończone
-      </button>
-      <button
+      </Button>
+      <Button
         onClick={setAllDone}
-        className="buttons__button"
         disabled={tasks.every(({ done }) => done)}
       >
         Ukończ wszystkie
-      </button>
-    </div>
+      </Button>
+    </Wrapper>
   );
 };
 
