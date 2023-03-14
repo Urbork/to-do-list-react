@@ -1,5 +1,30 @@
 import { useState } from "react";
+import styled, { css } from "styled-components";
 import "./style.css";
+
+const StyledButton = styled.button`
+  border: 1px solid teal;
+  padding: 10px;
+  margin: 10px;
+  background: white;
+  color: teal;
+  cursor: pointer;
+
+  &:hover {
+    background: teal;
+    color: white;
+  }
+
+  ${(props) => props.primary && css`
+    background: teal;
+    color: white;
+  `}
+`;
+
+const StyledPrimaryButton = styled(StyledButton)`
+  background: teal;
+  color: white;
+`;
 
 const Form = ({ addNewTask }) => {
   const [newTaskContent, setNewTaskContent] = useState("");
@@ -26,6 +51,9 @@ const Form = ({ addNewTask }) => {
         autoFocus
       />
       <button className="form__button">Dodaj zadanie</button>
+      <StyledButton primary>Główny Przycisk</StyledButton>
+      <StyledButton>Przycisk</StyledButton>
+      <StyledPrimaryButton>Główny Przycisk v2</StyledPrimaryButton>
     </form>
   );
 };
