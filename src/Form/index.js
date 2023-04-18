@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { MainForm, FormInput, FormButton } from "./styled"
+import { MainForm, FormInput, FormButton } from "./styled";
 
 const Form = ({ addNewTask }) => {
   const [newTaskContent, setNewTaskContent] = useState("");

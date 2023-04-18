@@ -13,15 +13,19 @@ export const Item = styled.li`
   align-items: center;
   border-bottom: 2px solid whitesmoke;
 
-  ${({hidden}) => hidden && css`
-    display: none;
-  `}
+  ${({ hidden }) =>
+    hidden &&
+    css`
+      display: none;
+    `}
 `;
 
 export const Content = styled.span`
-  ${({done}) => done && css`
-    text-decoration: line-through;
-  `} 
+  ${({ done }) =>
+    done &&
+    css`
+      text-decoration: line-through;
+    `}
 `;
 
 export const Button = styled.button`
@@ -38,11 +42,13 @@ export const Button = styled.button`
     background-color: hsl(120, 100%, 35%);
   }
 
-  ${({remove}) => remove && css`
-    background-color: red;
+  ${({ remove }) =>
+    remove &&
+    css`
+      background-color: red;
 
-    &:hover {
-      background-color: hsl(0, 100%, 65%);
-    }
-  `}
+      &:hover {
+        background-color: hsl(0, 100%, 65%);
+      }
+    `}
 `;

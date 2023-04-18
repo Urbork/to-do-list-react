@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
-const PREVIOUS_TASKS = JSON.parse(localStorage.getItem("tasks"));
+const previousTasks = JSON.parse(localStorage.getItem("tasks"));
 
 export const useTasks = () => {
   const [tasks, setTasks] = useState(
-    PREVIOUS_TASKS
-      ? PREVIOUS_TASKS
+    previousTasks
+      ? previousTasks
       : [{ id: 1, content: "przykładowe zadanie", done: true }]
   );
 
@@ -47,4 +47,4 @@ export const useTasks = () => {
     setAllDone,
     addNewTask,
   };
-}
+};

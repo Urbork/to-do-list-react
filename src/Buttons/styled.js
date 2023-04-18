@@ -22,12 +22,14 @@ export const Button = styled.button`
     color: hsl(180, 100%, 30%);
   }
 
-  ${({disabled}) => disabled && css`
-    color: lightgray;
-    cursor: auto;
-
-    &:hover {
+  ${({ disabled }) =>
+    disabled &&
+    css`
       color: lightgray;
-    }
-  `}
+      cursor: auto;
+
+      &:hover {
+        color: lightgray;
+      }
+    `}
 `;
