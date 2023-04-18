@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const Wrapper = styled.div`
   width: 100%;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     margin-bottom: 8px;
     display: grid;
     grid-template-columns: 1fr;
@@ -13,23 +13,19 @@ export const Wrapper = styled.div`
 
 export const Button = styled.button`
   background-color: white;
-  color: teal;
+  color: ${({ theme }) => theme.color.teal};
   border: none;
   transition: 1s;
   cursor: pointer;
 
   &:hover {
-    color: hsl(180, 100%, 30%);
+    filter: brightness(120%);
   }
 
   ${({ disabled }) =>
     disabled &&
     css`
-      color: lightgray;
+      color: ${({ theme }) => theme.color.gray};
       cursor: auto;
-
-      &:hover {
-        color: lightgray;
-      }
     `}
 `;

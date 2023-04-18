@@ -12,9 +12,9 @@ export const SectionHeader = styled.header`
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  border-bottom: 2px solid whitesmoke;
+  border-bottom: 2px solid ${({ theme }) => theme.color.white};
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     display: flex;
     flex-direction: column;
   }

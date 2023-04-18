@@ -8,7 +8,7 @@ export const MainForm = styled.form`
   grid-gap: 16px;
   background-color: white;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     display: flex;
     flex-direction: column;
   }
@@ -16,12 +16,12 @@ export const MainForm = styled.form`
 
 export const FormInput = styled.input`
   padding: 8px 12px;
-  border: 1px solid lightgrey;
+  border: 1px solid ${({ theme }) => theme.color.gray};
 `;
 
 export const FormButton = styled.button`
   padding: 8px 16px;
-  background-color: teal;
+  background-color: ${({ theme }) => theme.color.teal};
   color: white;
   border: none;
   transition: 1s;
@@ -29,6 +29,6 @@ export const FormButton = styled.button`
 
   &:hover {
     transform: scale(1.05);
-    background-color: hsl(180, 100%, 30%);
+    filter: brightness(120%);
   }
 `;
