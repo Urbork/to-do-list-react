@@ -21,11 +21,11 @@ const tasksSlice = createSlice({
     },
     toggleTaskDone: (state, action) => {
       const index = state.tasks.findIndex((task) => task.id === action.payload);
-      if (index !== -1) {
-        state.tasks[index].done = !state.tasks[index].done;
-      }
-      // state.tasks[index].done = !state.tasks[index].done;
-      console.log(action.payload);
+      // if (index !== -1) {
+      //   state.tasks[index].done = !state.tasks[index].done;
+      // }
+      state.tasks[index].done = !state.tasks[index].done;
+      // console.log(action.payload);
     },
   },
 });
