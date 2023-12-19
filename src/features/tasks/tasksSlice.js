@@ -3,13 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const tasksSlice = createSlice({
   name: "tasks",
   initialState: {
-    tasks: [
-      {
-        id: 1,
-        content: "test",
-        done: true,
-      },
-    ],
+    tasks: [],
     hideDone: false,
   },
   reducers: {
@@ -21,18 +15,13 @@ const tasksSlice = createSlice({
     },
     toggleTaskDone: (state, action) => {
       const index = state.tasks.findIndex((task) => task.id === action.payload);
-      // if (index !== -1) {
-      //   state.tasks[index].done = !state.tasks[index].done;
-      // }
       state.tasks[index].done = !state.tasks[index].done;
-      // console.log(action.payload);
     },
     removeTask: (state, action) => {
       const index = state.tasks.findIndex((task) => task.id === action.payload);
       state.tasks.splice(index, 1);
-      // console.log(action.payload);
     },
-    setAllDone: (state, action) => {
+    setAllDone: (state) => {
       state.tasks.forEach((task) => (task.done = true));
     },
   },
@@ -47,21 +36,3 @@ export const {
 } = tasksSlice.actions;
 export const selectTasks = (state) => state.tasks;
 export default tasksSlice.reducer;
-
-// console.log(
-//   addTask({
-//     content: "Nauczyć się Reduxa i Reacta",
-//     done: false,
-//     id: 999,
-//   })
-// );
-
-// console.log(
-//   tasksSlice.reducer(
-//     { tasks: [] },
-//     addTask({
-//       content: "Test123",
-//       done: true,
-//     })
-//   )
-// );
