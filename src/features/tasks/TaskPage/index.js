@@ -7,7 +7,6 @@ import { getTaskById } from "../tasksSlice";
 
 function TaskPage() {
   const params = useParams();
-  // const {id} = useParams();
   const task = useSelector((state) => getTaskById(state, params.id));
 
   return (
