@@ -4,6 +4,7 @@ import Header from "../../../common/Header";
 import Section from "../../../common/Section";
 import { useSelector } from "react-redux";
 import { getTaskById } from "../tasksSlice";
+import { Wrapper } from "./styled";
 
 function TaskPage() {
   const params = useParams();
@@ -13,11 +14,13 @@ function TaskPage() {
     <Container>
       <Header title="Szczegóły zadania" />
       <Section
-        title={task ? task.content : "Nie znaleziono zadania 😢"}
+        title={task ? "🗓 " + task.content : "😢 Nie znaleziono zadania"}
         body={
-          <>
-            <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
-          </>
+          task ? (
+            <Wrapper>
+              <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
+            </Wrapper>
+          ) : null
         }
       />
     </Container>
