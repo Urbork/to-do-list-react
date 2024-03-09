@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -9,23 +9,4 @@ export const Wrapper = styled.div`
     grid-template-columns: 1fr;
     gap: 8px;
   }
-`;
-
-export const Button = styled.button`
-  background-color: white;
-  color: ${({ theme }) => theme.color.teal};
-  border: none;
-  transition: 1s;
-  cursor: pointer;
-
-  &:hover {
-    filter: brightness(120%);
-  }
-
-  ${({ disabled }) =>
-    disabled &&
-    css`
-      color: ${({ theme }) => theme.color.gray};
-      cursor: auto;
-    `}
 `;

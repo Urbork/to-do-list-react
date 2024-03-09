@@ -6,6 +6,8 @@ const tasksSlice = createSlice({
   initialState: {
     tasks: getTasksFromLocalStorage(),
     hideDone: false,
+    isLoading: false,
+    error: null,
   },
   reducers: {
     addTask: ({ tasks }, { payload }) => {
@@ -46,6 +48,7 @@ export const selectTasksState = (state) => state.tasks;
 export const selectTasks = (state) => selectTasksState(state).tasks;
 export const getTaskById = (state, taskId) =>
   selectTasks(state).find(({ id }) => id === taskId);
+export const selectLoading = (state) => selectTasksState(state).isLoading;
 export const selectTasksByQuery = (state, query) => {
   const tasks = selectTasks(state);
 
