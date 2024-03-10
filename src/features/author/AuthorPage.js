@@ -5,7 +5,7 @@ import { Wrapper } from "./styled";
 
 const AuthorPage = () => (
   <Container>
-    <Header title="O autorze" />
+    <Header title="Kilka słów o mnie" />
     <Section
       title="🚀 Jonasz Jachym"
       body={

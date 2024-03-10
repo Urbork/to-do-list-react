@@ -18,3 +18,17 @@ export const Button = styled.button`
       cursor: auto;
     `}
 `;
+
+export const FormButton = styled.button`
+  padding: 8px 16px;
+  background-color: ${({ theme }) => theme.color.teal};
+  color: white;
+  border: none;
+  transition: 1s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    filter: brightness(120%);
+  }
+`;

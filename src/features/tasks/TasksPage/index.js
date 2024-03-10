@@ -4,7 +4,7 @@ import Form from "../TasksPage/Form";
 import List from "../TasksPage/List";
 import Buttons from "../TasksPage/Buttons";
 import Section from "../../../common/Section";
-import SearchBar from "../SearchBar";
+import SearchBar from "./SearchBar";
 import FetchExampleTasksButton from "./FetchExampleTasksButton";
 
 function TasksPage() {

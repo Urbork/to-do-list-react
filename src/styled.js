@@ -1,15 +1,33 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom/cjs/react-router-dom";
 
 const activeClassName = "active";
+
+export const NavigationList = styled.ul`
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  list-style: none;
+  padding: 16px 0;
+  background-color: ${({ theme }) => theme.color.teal};
+`;
 
 export const StyledNavLink = styled(NavLink).attrs(() => ({
   activeClassName,
 }))`
+  color: ${({ theme }) => theme.color.white};
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+
+  &:hover {
+    color: black;
+  }
+
   &.${activeClassName} {
-    color: red;
+    font-weight: bold;
+    font-size: 1.5rem;
   }
 `;
-
-// w App.js zamiast Link powinno być NavLink z activeClassName="active"
-// a zamiast NavLink powinno być teraz StyledNavLink już bez activeClassName="active"
-// w devtools sprawdzić czy dodaje się klasa czy props do aktywnego linku
