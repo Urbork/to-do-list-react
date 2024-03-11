@@ -2,9 +2,21 @@
 
 It is a very simple to-do list. It's a list of tasks you need to complete or things that you want to do.
 
-https://urbork.github.io/to-do-list-react/
+DEMO: https://urbork.github.io/to-do-list-react/
 
-![preview](https://i.postimg.cc/Hn2sLbSc/preview.jpg)
+![preview](https://i.imgur.com/CKSXS21.jpeg)
+
+## Functions
+
+- Add new task
+- Delete task
+- Mark task as completed
+- Mark all tasks as completed
+- Hide all completed tasks
+- Search/filter
+- Download example tasks
+- See task details page
+- Read about an author
 
 ## Technologies used:
 
@@ -15,6 +27,11 @@ https://urbork.github.io/to-do-list-react/
 - React
 - Babel
 - Webpack
+- Local Storage
+- Styled Components
+- React
+- Redux Saga
+- React Router
 
 # Getting Started with Create React App
 
