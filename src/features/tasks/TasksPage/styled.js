@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Button = styled.button`
+  padding: 8px 16px;
   background-color: white;
   color: ${({ theme }) => theme.color.teal};
   border: none;
@@ -8,6 +9,7 @@ export const Button = styled.button`
   cursor: pointer;
 
   &:hover {
+    transform: scale(1.05);
     filter: brightness(120%);
   }
 

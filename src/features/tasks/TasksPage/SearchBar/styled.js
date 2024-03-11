@@ -9,6 +9,5 @@ export const Wrapper = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     display: flex;
     flex-direction: column;
-    gap: 8px;
   }
 `;
