@@ -4,6 +4,10 @@ export const SectionWrapper = styled.section`
   width: 80%;
   margin: 0 auto;
   background-color: white;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    width: 95%;
+  }
 `;
 
 export const SectionHeader = styled.header`
