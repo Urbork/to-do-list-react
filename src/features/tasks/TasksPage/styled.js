@@ -9,6 +9,7 @@ export const Button = styled.button`
   cursor: pointer;
 
   &:hover {
+    text-decoration: underline;
     transform: scale(1.05);
     filter: brightness(120%);
   }
