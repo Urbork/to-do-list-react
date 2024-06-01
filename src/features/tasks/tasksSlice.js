@@ -27,6 +27,7 @@ const tasksSlice = createSlice({
     setAllDone: (state) => {
       state.tasks.forEach((task) => (task.done = true));
     },
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
     fetchExampleTasks: () => {},
     setTasks: (state, { payload: tasks }) => {
       state.tasks = tasks;
