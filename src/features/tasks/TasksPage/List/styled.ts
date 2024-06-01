@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const TasksList = styled.ul`
@@ -21,7 +21,7 @@ export const Item = styled.li`
     `}
 `;
 
-export const Content = styled.span`
+export const Content = styled.span<{ done?: boolean }>`
   ${({ done }) =>
     done &&
     css`
@@ -39,7 +39,9 @@ export const StyledLink = styled(Link)`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.button<{
+  remove?: boolean;
+}>`
   margin: 0 8px;
   width: 30px;
   height: 30px;

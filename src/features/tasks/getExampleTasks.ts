@@ -1,8 +1,4 @@
-interface Task {
-  id: number;
-  content: string;
-  done: boolean;
-}
+import { Task } from "./types";
 
 export const getExampleTasks = async () => {
   const response = await fetch("/to-do-list-react/exampleTasks.json");
