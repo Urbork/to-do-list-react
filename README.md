@@ -32,6 +32,7 @@ Check it out: https://urbork.github.io/to-do-list-react/
 
 - CSS
 - JavaScript
+- TypeScript
 - BEM
 - React
 - Babel
