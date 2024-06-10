@@ -1,14 +1,22 @@
-# To-Do List
+# ✅ [To-Do List](https://urbork.github.io/to-do-list-react/)
+
+- [Overview](#-overview)
+- [Features](#-features)
+- [Technologies Used](#-technologies-used)
+- [Setup](#-setup)
+
+## ▶ Overview
 
 It is a very simple to-do list. It's a list of tasks you need to complete or things that you want to do.
 
-DEMO: https://urbork.github.io/to-do-list-react/
+Check it out: https://urbork.github.io/to-do-list-react/
 
 ![preview](https://i.imgur.com/CKSXS21.jpeg)
 
-## Functions
+## ⭐ Features
 
 - Add new task
+
 - Delete task
 - Mark task as completed
 - Mark all tasks as completed
@@ -18,11 +26,13 @@ DEMO: https://urbork.github.io/to-do-list-react/
 - See task details page
 - Read about an author
 
-## Technologies used:
+## ⚙ Technologies Used
 
 - HTML
+
 - CSS
 - JavaScript
+- TypeScript
 - BEM
 - React
 - Babel
@@ -33,38 +43,36 @@ DEMO: https://urbork.github.io/to-do-list-react/
 - Redux Saga
 - React Router
 
-# Getting Started with Create React App
+## 💻 Setup
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To run the program from the repository on your local computer, follow these steps:
 
-## Available Scripts
+### 1. Downloading the Source Code
 
-In the project directory, you can run:
+Clone the Repository to your computer using the command:
 
-### `npm start`
+```commandline
+git clone https://github.com/Urbork/to-do-list-react.git
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Installing Dependencies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Navigate to the project directory:
 
-### `npm run build`
+```commandline
+cd currency-converter-react
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install all required dependencies using a package manager like npm:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```commandline
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Running the Application
 
-### `npm run eject`
+```commandline
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This command will start the application in developer mode and open it in a browser at http://localhost:3000
