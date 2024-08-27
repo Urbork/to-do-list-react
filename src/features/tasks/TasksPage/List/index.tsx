@@ -36,6 +36,11 @@ const List = () => {
           </Button>
         </Item>
       ))}
+      <p>Liczba wszystkich zadań: {tasks.length}</p>
+      <p>
+        Liczba ukończoncyh zadań:{" "}
+        {tasks.filter((task: Task) => task.done).length}
+      </p>
     </TasksList>
   );
 };
