@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
-import Container from "../../../common/Container";
-import Header from "../../../common/Header";
-import Section from "../../../common/Section";
+import Container from "../../components/Container";
+import Header from "../../components/Header";
+import Section from "../../components/Section";
 import { useSelector } from "react-redux";
-import { getTaskById } from "../tasksSlice";
+import { getTaskById } from "../../features/tasks/tasksSlice";
 import { Wrapper } from "./styled";
 
 function TaskPage() {

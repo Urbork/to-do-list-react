@@ -1,78 +1,71 @@
-# ✅ [To-Do List](https://urbork.github.io/to-do-list-react/)
+# ✅ To-Do List
 
 - [Overview](#-overview)
 - [Features](#-features)
 - [Technologies Used](#-technologies-used)
 - [Setup](#-setup)
+- [Usage](#-usage)
 
 ## ▶ Overview
 
-It is a very simple to-do list. It's a list of tasks you need to complete or things that you want to do.
+A simple and efficient to-do list application that allows users to manage their tasks effectively. Users can add, delete, mark tasks as completed, filter tasks, and download example tasks.
 
-Check it out: https://urbork.github.io/to-do-list-react/
+🔗 **Live Demo:** [To-Do List](https://urbork.github.io/to-do-list-react/)
 
 ![preview](https://i.imgur.com/CKSXS21.jpeg)
 
 ## ⭐ Features
 
-- Add new task
-
-- Delete task
-- Mark task as completed
+- Add new tasks
+- Delete tasks
+- Mark tasks as completed
 - Mark all tasks as completed
-- Hide all completed tasks
-- Search/filter
+- Hide completed tasks
+- Search and filter tasks
 - Download example tasks
-- See task details page
-- Read about an author
+- View task details
+- Read about the author
 
 ## ⚙ Technologies Used
 
-- HTML
-
-- CSS
-- JavaScript
-- TypeScript
-- BEM
-- React
-- Babel
-- Webpack
-- Local Storage
-- Styled Components
-- React
-- Redux Saga
-- React Router
+- **Redux Toolkit** - State management
+- **React Router** - Navigation
+- **Styled Components** - CSS-in-JS styling
+- **TypeScript** - Static typing
+- **Local Storage** - Data persistence
+- **BEM** - CSS methodology
+- **Webpack & Babel** - Build tools
 
 ## 💻 Setup
 
-To run the program from the repository on your local computer, follow these steps:
+### 1. Clone the Repository
 
-### 1. Downloading the Source Code
-
-Clone the Repository to your computer using the command:
-
-```commandline
+```sh
 git clone https://github.com/Urbork/to-do-list-react.git
+cd to-do-list-react
 ```
 
-### 2. Installing Dependencies
+### 2. Install Dependencies
 
-Navigate to the project directory:
-
-```commandline
-cd currency-converter-react
-```
-
-Install all required dependencies using a package manager like npm:
-
-```commandline
+```sh
 npm install
 ```
 
-### 3. Running the Application
+### 3. Start the Application
 
-```commandline
+```sh
 npm start
 ```
 
-This command will start the application in developer mode and open it in a browser at http://localhost:3000
+## 🛠 Usage
+
+- **Adding a Task**: Type a task in the input field and press `Add`.
+- **Mark as Completed**: Click the green checkbox.
+- **Delete a Task**: Click the red `X` button.
+- **Filter Tasks**: Use the search bar to find specific tasks.
+- **Download Example Tasks**: Click the "Download Example Tasks" button.
+- **Navigate Pages**: Use the top navigation bar.
+
+---
+
+Enjoy your productivity! ✅

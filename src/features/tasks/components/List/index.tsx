@@ -5,9 +5,9 @@ import {
   toggleTaskDone,
   removeTask,
   selectTasksByQuery,
-} from "../../tasksSlice.js";
-import searchQueryParamName from "../searchQueryParamName.js";
-import { useQueryParameter } from "../useQueryParameters.js";
+} from "../../tasksSlice";
+import searchQueryParamName from "../../../../utils/searchQueryParamName.js";
+import { useQueryParameter } from "../../../../hooks/useQueryParameters.js";
 import { toTask } from "../../../../routes.js";
 import { Task } from "../../types";
 

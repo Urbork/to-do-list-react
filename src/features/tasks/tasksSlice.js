@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getTasksFromLocalStorage } from "./tasksLocalStorage";
+import { getTasksFromLocalStorage } from "../../utils/tasksLocalStorage";
 
 const tasksSlice = createSlice({
   name: "tasks",
@@ -27,7 +27,6 @@ const tasksSlice = createSlice({
     setAllDone: (state) => {
       state.tasks.forEach((task) => (task.done = true));
     },
-    // eslint-disable-next-line @typescript-eslint/no-empty-function
     fetchExampleTasks: () => {},
     setTasks: (state, { payload: tasks }) => {
       state.tasks = tasks;

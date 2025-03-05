@@ -1,11 +1,11 @@
 import {
   useQueryParameter,
   useReplaceQueryParameter,
-} from "../useQueryParameters";
-import searchQueryParamName from "../searchQueryParamName";
+} from "../../../../hooks/useQueryParameters";
+import searchQueryParamName from "../../../../utils/searchQueryParamName";
 import { Wrapper } from "./styled";
-import { FormButton } from "../styled";
-import Input from "../../Input";
+import { FormButton } from "../../../../pages/TasksPage/styled";
+import Input from "../Input";
 
 const SearchBar = () => {
   const query = useQueryParameter(searchQueryParamName);
